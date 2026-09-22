@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="clock-card">
+    <div class="clock-header">
+      <span class="location-tag"><i class="fa-solid fa-globe"></i> Yerel Zaman</span>
+      <button id="formatToggleBtn" class="toggle-btn" aria-label="Saat Formatı Değiştir">
+        <span id="formatLabel">24H</span>
+      </button>
+    </div>
+
+    <div class="time-display">
+      <div class="time-unit">
+        <span id="hours" class="time-digit">00</span>
+        <span class="unit-label">Saat</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="time-unit">
+        <span id="minutes" class="time-digit">00</span>
+        <span class="unit-label">Dakika</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="time-unit">
+        <span id="seconds" class="time-digit">00</span>
+        <span class="unit-label">Saniye</span>
+      </div>
+      <div id="ampmContainer" class="ampm-wrapper hidden">
+        <span id="ampm" class="ampm-text">AM</span>
+      </div>
+    </div>
+
+    <div class="progress-bar-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div class="clock-footer">
+      <div id="dateDisplay" class="date-text">1 Ocak 2026</div>
+      <div id="dayDisplay" class="day-text">Pazartesi</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
